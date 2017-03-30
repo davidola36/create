@@ -1,12 +1,14 @@
 <!doctype html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style type="text/css"> 
-        body {background-color:#181818;/*sjdfsffsf*/ 
+        body {background-color:#181818;
 		      color:white;
 			  position:relative;
 			  margin:0;
-			  padding:0;}
+			  padding:0;
+			  width:100%}
 			  
 		.top{width:100%;
 		     padding:0;
@@ -23,14 +25,14 @@
 		}  
 		#two {width:100px;
 			  margin:0 auto;
-			   
-			  color:#1#989898}
+			   }
+		
 		#three{margin-left:700px;
 		       word-spacing:50px;
 			   top:63px;
-			  
-			   position:fixed;
-			   z-index:1;}
+			  position:fixed;
+			   z-index:1;
+			   width:100%}
 		#four{text-align:left;
 			  clear:right; position:relative; 
 		      }
@@ -45,7 +47,8 @@
 			font-family:Helvetica;}
 		#floaters{float:left;
 				  margin-right:24px;
-				  margin-top:50px;}
+				  margin-top:50px;
+				  }
 	    #img{overflow:hidden;
 		     border:1px solid white;
 			  height:250px;
@@ -55,7 +58,9 @@
 			  
 		    }
 		#five{clear:left;}
-		img{opacity:0.5;}
+		img{opacity:0.5;
+		    width:100%;
+			height:auto;}
 		img:hover {opacity:1.0;}
 		.name{font-weight:bold;
 		      font-size:24px;}
@@ -63,10 +68,9 @@
 		#clear{clear:left;
 		       absolute:relative;}
 		#floats{position:relative;
-		        width:1200px;
-				margin:auto;
-				margin-top:135px;
-				margin-left:125px;}
+		        width:100%;
+				padding-left:100px;
+				box-sizing:border-box;}
 		#six{font-weight:bold;
 		      font-size:30px;
 			  text-align:center;
@@ -93,8 +97,9 @@
 .dropdown {
     position:relative;
     display: inline-block;
-	margin-right:40px;
-	margin-bottom:300px;}
+	width:20%;
+	height:200px;
+	float:left;}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -116,44 +121,37 @@
 
 .dropdown:hover .dropdown-content {
     display: block;}
-.dropbtns{
-    background-color:#181818;
-    color: white;
-	text-decoration:underline;
-    padding: 16px;
-    font-size: 30px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdowns{
-    position: relative;
-    display: inline-block;
-	margin-right:40px;
-    margin-bottom:300px;}
-.dropdown-contents{
-    display: none;
-    position: absolute;
-    background-color: #181818;
-    min-width: 160px;
-	width:100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-contents a{
-    color: gray;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-contents a:hover{
-                           color:white;}
-
-.dropdowns:hover .dropdown-contents{
-    display: block;
-}
+#clear2{clear:both;}
+   @media only screen and (max-width: 768px)
+        {body{padding:0;
+		      margin:0;
+			  font-size:20px;}
+		 .h11 {position:absolute;
+		       margin-left:15px;
+			   font-size:36px;
+			   margin-top:-5px;}
+		 .p2{text-indent:0;
+		    font-size:22px;
+			margin-left:15px;}
+	     #img{width:120px;
+		     height:120px;}
+		 #floats{padding-left:0;
+		        box-sizing:border-box;}
+		 #six{font-size:22px;
+		     padding:0 1px;
+			 height:70px;
+			 margin-top:0;}
+		 #three{display:none;}
+		 .top{display:none;}
+		 .dropbtn{font-size:22px;}
+		 .dropdown{width:50%;
+		           text-align:center;}
+		 #floaters{width:50%;
+		           margin:50px 0;
+				   text-align:center;}
+         		
+		       
+		}
  </style>  
  </head>
  <body>
@@ -182,9 +180,9 @@
 <div id="floaters"><div id="img"><img src="image19.jpeg" /></div><P class="name">Alexis<br /> Marcou</p><SPAN class="illustrator">ILLUSTRATOR<span></div>
 <div id="floaters"><div id="img"><img src="image20.jpeg" /></div><P class="name">Alexis<br /> Marcou</p><SPAN class="illustrator">ILLUSTRATOR<span></div><div>
  <div id="clear"></div>
- <div id="six">Curious for more ? Discover our full roster of talents</div>
+ <div id="six">Curious for more ? <br /> Discover our full roster of talents</div>
  
-<div class="dropdown">
+<div class="dropgroup"><div class="dropdown">
   <button class="dropbtn">Dropdown</button>
   <div class="dropdown-content">
     <a href="#">Link 1</a>
@@ -224,46 +222,49 @@
     <a href="#">Link 3</a>
   </div>
 </div>
-<div class="dropdowns">
-  <button class="dropbtns">dropdown</button>
-  <div class="dropdown-contents">
+<div class="dropdown">
+  <button class="dropbtn">dropdown</button>
+  <div class="dropdown-content">
     <a href="#">Link 1</a>
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
   </div>
 </div>
-<div class="dropdowns">
-  <button class="dropbtns">dropdown</button>
-  <div class="dropdown-contents">
+<div class="dropdown">
+  <button class="dropbtn">dropdown</button>
+  <div class="dropdown-content">
     <a href="#">Link 1</a>
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
   </div>
 </div>
-<div class="dropdowns">
-  <button class="dropbtns">dropdown</button>
-  <div class="dropdown-contents">
+<div class="dropdown">
+  <button class="dropbtn">dropdown</button>
+  <div class="dropdown-content">
     <a href="#">Link 1</a>
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
   </div>
 </div>
-<div class="dropdowns">
-  <button class="dropbtns">dropdown</button>
-  <div class="dropdown-contents">
+<div class="dropdown">
+  <button class="dropbtn">dropdown</button>
+  <div class="dropdown-content">
     <a href="#">Link 1</a>
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
   </div>
 </div>
-<div class="dropdowns">
-  <button class="dropbtns">dropdown</button>
-  <div class="dropdown-contents">
+<div class="dropdown">
+  <button class="dropbtn">dropdown</button>
+  <div class="dropdown-content">
     <a href="#">Link 1</a>
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
   </div>
 </div>
+<div id="clear2"></div>
+</div>
+
 
 										  
  </body>
